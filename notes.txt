@@ -1,0 +1,16 @@
+#security of Node package: "retire.js" and "Node Security Platform" are used to secure your node package.
+
+Install Node Security Platform: "npm install -g nsp"
+
+Command to check security: "nsp check"
+
+Global package are located inside '.bin' folder inside 'node_modules' folder.
+
+
+------Shaing your work in progress status-----
+localtunnel: easily share work on your local machine
+setup:
+
+1. npm install localtunnel -g
+
+**npm-run-all**: we can use this command to run all task at one time. We can also use --parllel command with npm-run-all.
