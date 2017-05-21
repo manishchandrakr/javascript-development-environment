@@ -11,13 +11,13 @@ describe('our first test', () => {
 });
 
 describe('index.html', () => {
-  it('should say hello', (done) => {
+  it('should have h1 that says Users', (done) => {
     // reading the index.html file
     const index = fs.readFileSync('./src/index.html', 'utf-8');
     // using jsdom to create dom environment for testing
     jsdom.env(index,(err, window)=>{
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal('Hello World');
+      expect(h1.innerHTML).to.equal('Users');
       done();
       window.close()
     });
